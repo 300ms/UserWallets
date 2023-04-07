@@ -36,14 +36,6 @@ namespace Core.DataAccess.EntityFramework
 			}
 		}
 
-		public TEntity GetById(int id)
-		{
-			using (var context = new TContext())
-			{
-				return context.Set<TEntity>().Where(entity => entity.Id == id).FirstOrDefault();
-			}
-		}
-
 		public IList<TEntity> GetList(Expression<Func<TEntity, bool>>? filter = null)
 		{
 			using (var context = new TContext())
