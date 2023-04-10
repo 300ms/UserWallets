@@ -1,14 +1,14 @@
-﻿using Entities.Concrete;
-using System.Linq.Expressions;
+﻿using Core.Utilities.Results;
+using Entities.Concrete;
 
 namespace Business.Abstract
 {
 	public interface IAccountService
 	{
-		Account GetById(int id);
-		List<Account> GetList();
-		void Add(Account account);
-		void Update(Account account);
-		void Delete(Account account);
+		IDataResult<Account> GetById(int id);
+		IDataResult<List<Account>> GetList();
+		IResult Add(Account account);
+		IResult Update(Account account);
+		IResult Delete(Account account);
 	}
 }
