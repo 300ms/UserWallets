@@ -2,7 +2,6 @@
 using Entities.Concrete;
 using DataAccess.Abstract;
 using Core.Utilities.Results;
-using DataAccess.Concrete.EntityFramework;
 using Business.Constants;
 
 namespace Business.Concrete
