@@ -11,11 +11,11 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
 		}
 
 		public DbSet<Account> Account { get; set; }
-		//public DbSet<AccountUser> AccountUsers { get; set; }
-		//public DbSet<User> Users { get; set; }
-		//public DbSet<UserWallet> UserWallets { get; set; }
-		//public DbSet<Wallet> Wallets { get; set; }
-		//public DbSet<Transaction> Transactions { get; set; }
-		//public DbSet<Category> Categories { get; set; }
+		public DbSet<AccountUser> AccountUser { get; set; }
+		public DbSet<User> User { get; set; }
+		public DbSet<UserWallet> UserWallet { get; set; }
+		public DbSet<Wallet> Wallet { get; set; }
+		public DbSet<Transaction> Transaction { get; set; }
+		public DbSet<Category> Category { get; set; }
 	}
 }
